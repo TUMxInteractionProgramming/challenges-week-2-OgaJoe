@@ -13,7 +13,7 @@
         /*global styles */
         * {
             /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto','Arial', sans-serif;
             padding: 0px;
         }
 
@@ -21,13 +21,6 @@
             /* #2 #colorful #background */
             background-color: #F5F5F5;
         }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-        }
-
 
         /*styles for App bar*/
         .app-bar{
@@ -56,24 +49,81 @@
             /* #2 #font #metadata is now medium */
             font-size: medium;
         }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-        ul{
-            /* removes bullet */
-            list-style-type: none;
-            background-color: white;
-        }
-        span{
-            width: 80%;
-        }
         a{
             /* overrides the default color */
             color: black;
         }
-        div{
+        /* style for tab bar */
+        #tab-bar{
             background-color: white;
+            font-size: 13px;
+            text-align: center;
+            /* margin: auto; */
+        }
+        #tab-bar button{
+            background-color: white;
+            height: 72px;
+            margin-left: 16px;
+            margin-right: 16px;
+            border: none;
+            width: calc(33% - 32px);
+        }
+        #tab-bar button img{
+            padding-bottom: 4px;
+            display: block;
+            margin: auto;
+        }
+        #tab-bar button.selected{
+            border-bottom: #3F51B5 solid 4px;
+            color: #3F51B5;
+        }
+
+        /* style for channel list */
+        .channel-list{
+            /* removes bullet */
+            list-style-type: none;
+            background-color: white;
+            box-sizing: content-box;
+        }
+        .channel-list li img{
+            vertical-align: middle;
+        }
+        .channel-list li{
+            padding: 16px;
+            font-size: 16px;
+            height: 16px;  
+            border-bottom: 1px solid #F5F5F5;
+        }
+        .channel-list li.selected{
+            border-left: 4px solid #3F51B5;
+            color: #3F51B5;
+        }
+
+
+        /* style for message */
+        .message{
+            width: 80%;
+            margin-bottom: 8px;
+        }
+        .message p{
+            background-color: white;
+            padding: 16px;
+        }
+        .message strong{
+            font-size: medium;
+        }
+        .message button{
+            background-color: #CDDC39;
+            color: black;
+            text-transform: uppercase;
+        }
+        .message em{
+            font-size: large;
+            font-style: normal;
+        }
+        .align-messages{
+            margin-left: 2.5%;
+        }
+        .align-message{
+            margin-left: 17.5%;
         }

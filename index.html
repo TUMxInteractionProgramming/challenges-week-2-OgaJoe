@@ -9,6 +9,7 @@
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
 </head>
 
@@ -22,17 +23,17 @@
     </h1>
 
     <!-- #1 #channels #topics -->
-    <ul>
+    <ul class="channel-list">
         <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="favorites image"></li>
-        <li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites image"></li>
+        <li class="selected">#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites image"></li>
         <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites image"></li>
         <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorites image"></li>
         <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="favorites image"></li>
     </ul>
     <!-- container for buttons -->
-    <div>
+    <div id="tab-bar">
         <!-- #1 #channels #buttons -->
-        <button>
+        <button class="selected">
             <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="favorites image">
             new
         </button>
@@ -58,7 +59,7 @@
         </small>
     </h1>
 
-    <div>
+    <div class="message align-message">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -73,7 +74,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message align-messages">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -88,7 +89,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message align-messages">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -103,7 +104,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message align-messages">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -118,7 +119,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message align-messages">
         <!-- #1 #chat #metadata contains location, weekday, day, and time -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -133,7 +134,7 @@
         <button>+5 min.</button>
     </div>
 
-    <div>
+    <div class="message align-messages">
         <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
         <h3>
             <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
